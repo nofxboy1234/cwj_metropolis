@@ -7,6 +7,5 @@ RSpec.describe 'Creating a city', type: :feature do
     click_on 'Create City'
     visit cities_path
     expect(page).to have_content('Minneapolis')
-
   end
 end
