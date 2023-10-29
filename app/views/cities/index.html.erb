@@ -7,7 +7,7 @@
     <%= render city %>
     <p>
       <%= link_to "Show this city", city %>
-      <%= button_to "Destroy", city, method: :delete %>
+      <%= button_to "Destroy", city, method: :delete, data: { turbo_confirm: 'Are you sure?' } %>
     </p>
   <% end %>
 </div>
